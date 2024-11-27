@@ -16,7 +16,7 @@ const Cartbody = () => {
                 handleerror("No Token Provided");
                 return;
             }
-            const response = await axios.get('http://localhost:2000/product/cart/items', {
+            const response = await axios.get('https://nike-clone-3etr.onrender.com/product/cart/items', {
                 headers: { Authorization: `Bearer ${token}` }
             });
             if (response && response.data.details) {
@@ -36,7 +36,7 @@ const Cartbody = () => {
     const handleRemoveItem = async (productId) => {
         try {
             const token = localStorage.getItem('UserToken');
-            const response = await axios.delete(`http://localhost:2000/product/cart/delete/${productId}`, {
+            const response = await axios.delete(`https://nike-clone-3etr.onrender.com/product/cart/delete/${productId}`, {
                 headers: {
                     Authorization: `Bearer ${token}`
                 }
@@ -63,7 +63,7 @@ const Cartbody = () => {
 
         try {
             const token = localStorage.getItem('UserToken');
-            const response = await axios.put(`http://localhost:2000/product/cart/update/${productId}`, { quantity: newQuantity }, {
+            const response = await axios.put(`https://nike-clone-3etr.onrender.com/product/cart/update/${productId}`, { quantity: newQuantity }, {
                 headers: { Authorization: `Bearer ${token}` }
             });
             if (response) {
@@ -94,7 +94,7 @@ const Cartbody = () => {
 const Clearcart=async ()=>{
     try {
         const token=localStorage.getItem('UserToken')
-        const response=await axios.delete('http://localhost:2000/product/cart/delete',{headers : {Authorization :`Bearer ${token}`}})
+        const response=await axios.delete('https://nike-clone-3etr.onrender.com/product/cart/delete',{headers : {Authorization :`Bearer ${token}`}})
     } catch (error) {
         handleerror(error.response.data.message)
     }
