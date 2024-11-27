@@ -70,7 +70,7 @@ const Adminproductform = () => {
     });
     try {
       const token=localStorage.getItem('AdminToken')
-      const response = await axios.post('http://localhost:2000/Product/Add', form, { headers: {Authorization :`Bearer ${token}`,'Content-Type': 'multipart/form-data' }});
+      const response = await axios.post('https://nike-clone-3etr.onrender.com/Product/Add', form, { headers: {Authorization :`Bearer ${token}`,'Content-Type': 'multipart/form-data' }});
       if (response) {
         setLoading(false)
         handlesuccess('Product added successfully!');
