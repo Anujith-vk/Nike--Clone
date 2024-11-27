@@ -18,7 +18,9 @@ const Likedbody = () => {
     }
   }
   useEffect(() => {
+    if(localStorage.getItem('UserToken')){
    fetchproducts()  
+    }
   }, [])
   const Handlecart=async (item_id,id,selectedSize)=>{
   try {
