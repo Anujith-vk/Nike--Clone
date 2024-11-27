@@ -78,8 +78,7 @@
     }
     .likedmainbody2{
       flex-direction: column;
-      
-      height: auto;
-      margin-bottom: 180px;
+      height: 480px;
+      margin-bottom: 100px;
     }
 }
