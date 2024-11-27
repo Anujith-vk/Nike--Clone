@@ -6,17 +6,14 @@ import { ImBin } from "react-icons/im";
 import { ToastContainer } from 'react-toastify';
 const Likedbody = () => {
   const[products,setproducts]=useState([])
-  const[token,settoken]=useState(localStorage.getItem('UserToken'))
   const fetchproducts=async ()=>{
     try {
-      if(token)
-      {
+        const token=localStorage.getItem('UserToken')
         const response=await axios.get('https://nike-clone-3etr.onrender.com/product/favorite/display',{headers :{Authorization :`Bearer ${token}`}})
         if(response && response.data.details)
         {
           setproducts(response.data.details)
         }
-      }
     } catch (error) {
       handleerror(error.response.data.message)
     }
