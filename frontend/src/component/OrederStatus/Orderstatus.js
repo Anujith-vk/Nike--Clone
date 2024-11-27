@@ -43,11 +43,11 @@ const Orderstatus = () => {
   }, [])
 
   return (
-<div className='Likedmain'>
+<div className='Likedmain2'>
     {orders && orders.length>0 ? (orders.flatMap((item,index)=>(item.products.map((products,proindex)=>(
       <div className="likedmainbody2" key={`${index}-${proindex}`}>
         <img src={products.product.image[0]} alt="test" className='showimg' />
-        <div className="likedesc">
+        <div className="likedesc2">
           <div className="toplike">
           <h5>{products.product.title}</h5>
           </div>
@@ -59,7 +59,7 @@ const Orderstatus = () => {
           <p>Delivery & Shipping:₹ {((products.product.discountPrice*products.quantity)/100)*5} </p>
           <p>Total:₹ {products.product.discountPrice*products.quantity+((products.product.discountPrice*products.quantity)/100)*5}</p>
           <p className={products.status === 'Dispatching' ? 'dispatching' : products.status === 'Shipped' ? 'shipped' : products.status === 'Rejected' ? 'rejected' : 'delivered'}>Status: {products.status}</p>
-          <button className='addcbut' onClick={()=>Handlecancel(item._id,products._id,"Cancelled")} style={{display:products.status==='Delivered' ? 'none' : 'block'}} >Cancel Order</button>
+          <button className='addcbut' onClick={()=>Handlecancel(item._id,products._id,"Cancelled")} style={{display:products.status==='Delivered'||products.status==='Rejected' ? 'none' : 'block'}} >Cancel Order</button>
         </div>
       </div>
       ))))):(<p>No Orders</p>)}
