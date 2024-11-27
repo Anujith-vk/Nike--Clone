@@ -15,7 +15,6 @@ const Likedbody = () => {
           setproducts(response.data.details)
         }
     } catch (error) {
-      handleerror(error.response.data.message)
     }
   }
   useEffect(() => {
