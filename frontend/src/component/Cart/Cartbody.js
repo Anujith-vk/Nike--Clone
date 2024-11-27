@@ -12,10 +12,6 @@ const Cartbody = () => {
     const fetchProducts = async () => {
         try {
             const token =  localStorage.getItem('UserToken');
-            if (!token) {
-                handleerror("No Token Provided");
-                return;
-            }
             const response = await axios.get('https://nike-clone-3etr.onrender.com/product/cart/items', {
                 headers: { Authorization: `Bearer ${token}` }
             });
