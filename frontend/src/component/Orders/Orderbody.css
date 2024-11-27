@@ -1,9 +1,6 @@
 .ordermainbody{
     display: flex;
-    margin-bottom: 50px;
-    height: auto;
-    padding-bottom: 20px;
-
+    margin-bottom: 20px;
 }
 .toporder{
     padding-bottom: 10px;
@@ -11,16 +8,20 @@
     justify-content: space-between;
     max-width: 470px;
 }
+.likedesc2{
+    height: auto;
+}
 .bin{
     width:25px;
     height: 25px;
 }
-.addr{
+.addr2{
+    padding-top: 5px;
     padding-left: 10px;
     width: 100%;
-    height: 40vh;
+    
 }
-.addr p{
+.addr2 p{
     margin-top: -7px;
 }
 .status-shipped {
@@ -32,14 +33,10 @@
 .cancelled{
     color: red;
 } 
-
-@media (max-width:767px) {
-    .addr{
-     margin-top: 190px;
-    }
+ 
+@media (max-width:866px) {
     .ordermainbody{
-      flex-direction: column;
-      margin-bottom: -40px;
-    }
-   
+        flex-direction: column;
+        gap: 10px;
+      }  
 }
