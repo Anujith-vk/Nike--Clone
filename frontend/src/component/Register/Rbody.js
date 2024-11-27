@@ -28,7 +28,7 @@ const Rbody = () => {
             handleerror("Please Fill All the Feilds")
         }
         else{
-        const  response=await axios.post('http://localhost:2000/Create/user',{email,password,firstname,lastname,dateofBirth})
+        const  response=await axios.post('https://nike-clone-3etr.onrender.com/Create/user',{email,password,firstname,lastname,dateofBirth})
         if(response)
         {
             handlesuccess(response.data.message)
