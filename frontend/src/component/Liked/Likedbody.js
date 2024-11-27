@@ -11,7 +11,7 @@ const Likedbody = () => {
     try {
       if(token)
       {
-        const response=await axios.get('http://localhost:2000/product/favorite/display',{headers :{Authorization :`Bearer ${token}`}})
+        const response=await axios.get('https://nike-clone-3etr.onrender.com/product/favorite/display',{headers :{Authorization :`Bearer ${token}`}})
         if(response && response.data.details)
         {
           setproducts(response.data.details)
@@ -31,7 +31,7 @@ const Likedbody = () => {
       handleerror("Please Login First")
     }
     else{
-      const respose=await axios.post(`http://localhost:2000/product/addtocart/${id}`,{size:selectedSize},{headers :{Authorization :`Bearer ${token}`}})
+      const respose=await axios.post(`https://nike-clone-3etr.onrender.com/product/addtocart/${id}`,{size:selectedSize},{headers :{Authorization :`Bearer ${token}`}})
       if(respose){
         handlesuccess( respose.data.message)
         Handledelete(item_id)
@@ -48,7 +48,7 @@ const Likedbody = () => {
         handleerror("Please Login First")
       }
       else{
-        const response=await axios.delete(`http://localhost:2000/product/favourite/delete/${id}`,{headers :{Authorization :`Bearer ${token}`}})
+        const response=await axios.delete(`https://nike-clone-3etr.onrender.com/product/favourite/delete/${id}`,{headers :{Authorization :`Bearer ${token}`}})
         if(response)
         {
           setproducts((products)=>products.filter((product)=>product._id !== id))
