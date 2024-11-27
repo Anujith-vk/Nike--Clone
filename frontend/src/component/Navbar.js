@@ -44,16 +44,16 @@ const Navbar = () => {
       setUser(true);
     }
   }, []);
-  useEffect(() => {
-    const logoutTimer = setTimeout(() => {
-      localStorage.removeItem('AdminToken');
-      localStorage.removeItem('UserToken');
-      localStorage.removeItem('firstname');
-      setUser(false);
-      navigate('/');
-    }, 3600000);
-    return () => clearTimeout(logoutTimer);
-  }, []);
+useEffect(() => {
+  const timer = setTimeout(() => {
+    localStorage.clear();
+    navigate('/');
+    setUser(!user)
+  }, 600000);
+  window.onbeforeunload = () => localStorage.clear();
+  return () => clearTimeout(timer);
+}, [navigate]);
+
   const HandleLogout = () => {
     localStorage.removeItem('AdminToken');
     localStorage.removeItem('UserToken');
