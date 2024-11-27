@@ -1,0 +1,89 @@
+.checkmain{
+    height: auto;
+    margin: 0px 3% 0px 3%;
+    display: flex;
+    flex-direction: row;
+}
+.checkform{
+    max-width: 800px;
+    width:100%;
+    padding-left: 100px;
+    padding-top: 5%;
+    padding-bottom: 50px;
+}
+.checksum{
+    max-width:628px;
+    width: 100%;
+    padding: 5% 5% 0px 5%;
+    padding-bottom: 20px;
+}
+.imagesum{
+    height: 15vh;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15px;
+}
+.sumimg{
+    height: 15vh;
+    width: 120px;
+}
+.sumdetails{
+    padding-left: 15px;
+    height: 15vh;
+
+    width: 100%;
+}
+.sumdetails p{
+    margin-top: -15px;
+}
+.sumdetails h5{
+    padding-bottom: 10px;
+}
+.checkformtitle{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+ 
+}
+.orderplacebutton{
+max-width: 400px;
+width: 100%;
+height: 40px;
+border-radius: 10px;
+background-color: black;
+color: white;
+font-size: medium;
+font-weight: 600;
+border: 1px solid;
+}
+.checkformtitle input{
+max-width: 400px;
+width: 100%;
+height: 30px;
+padding: 8px;
+border-radius: 5px;
+border: 1px solid #0000009d;
+}
+@media (max-width:767px) {
+    .checkmain{
+        flex-direction: column;
+    }
+    .checkform{
+     order: 2;
+     padding-left: 5%;
+     padding-right: 4%;
+    }
+    .checksum{
+        max-width: 760px;
+        order: 1;
+        width: 100%;
+    } 
+    .checkformtitle input{
+        max-width: 760px;
+        width: 100%;
+        }
+        .orderplacebutton{
+            max-width: 760px;
+            width: 100%;
+            }
+}

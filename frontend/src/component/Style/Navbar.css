@@ -1,0 +1,361 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 3% 0px 3%;
+  }
+  
+  .firstnav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+  }
+  
+  .first .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .first-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .user-logined {
+    margin-left: 20px;
+    padding: 5px;
+  }
+  
+  .user-logined p {
+    margin: 0;
+    font-size: 14px;
+    cursor: pointer;
+  }
+.help-menu{
+    position: relative;
+    z-index: 10;
+}
+.submenu {
+    display: none; 
+    position: absolute;
+    top: 100%;
+    right: 10%;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    border-radius: 10px;
+  }
+  
+  .help-menu:hover .submenu {
+    display: block; 
+  }
+  .submenu p {
+    margin: 0;
+    padding: 5px 0;
+    cursor: pointer;
+    color: #0000005d;
+  }
+  
+  .submenu p:hover {
+    color: black;
+  }
+
+  .Hisubmenu{
+    z-index: 10;
+  position: absolute;
+  display: none;
+  top: 36%;
+  right: 4%;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 10px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+  width: 200px;
+  border-radius: 10px;
+  }
+ .Hi-menu:hover .Hisubmenu{
+display: block;
+ }
+
+ .Hisubmenu p:hover{
+    color: black;
+ }
+ .Hisubmenu p{
+    margin: 0;
+    padding: 5px 0;
+    cursor: pointer;
+    color: #0000005d;
+ }
+  .userimage{
+    width: 20px;
+    margin-top: -5px;
+  }
+.slidebuttonslogout{
+  margin-top: 20px;
+  display: flex;
+  margin-bottom: 10px;
+}
+.slidebuttonslogout button{
+  width: 80px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: black;
+  color: white;
+  border: none;
+  font-weight: 400;
+  margin-left: 33%;
+}
+  .secondnav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .secondcenter{
+    display: flex;
+    gap: 20px;
+  }
+  .secondlast{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-right: 5px;
+
+  }
+  .secondcenter h4{
+ font-size: medium;
+ font-weight: 400;
+  }
+  .searchicon{
+    width: 30px;
+    background-color: #0000010d;
+    padding: 5px;
+    border-radius: 15px 0px 0px 15px;
+  }
+  .searchiconbar{
+    display: flex;
+  }
+  .searchbar{
+    height: 30px;
+    width: 150px;
+    border-radius: 0px 20px 20px 0px;
+    border: none;
+    padding: 10px;
+    background-color: #0000010d;
+   outline: none;
+  }
+  .likeicon{
+    width: 20px;
+    height: 20px;
+  }
+  .basketicon{
+    width: 20px;
+    height: 20px;
+  }
+  .secondcenter h4 {
+    font-size: medium;
+    font-weight: 400;
+    cursor: pointer; 
+    transition: all 0.3s ease; 
+  }
+  
+  .secondcenter h4:hover {
+   text-underline-offset: 10px;
+    text-decoration: underline; 
+    text-decoration-color: black; 
+  }
+  .hamburgericon{
+    width: 30px;
+    display: none;
+  }
+  .slidenavbarparent{
+    width: 100%;
+    height:auto;
+    overflow: hidden;
+  }
+  .slidenavbar {
+    height: 100vh; 
+    width: 0px;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto; 
+    z-index: 10;
+    transition: ease-in 0.1s;
+    position: fixed;
+    z-index: 10;
+    padding-top: 10px;
+    display: block;
+    background-color: white;
+  }
+  .slidenavbar.open{
+    width: 320px;
+  }
+ 
+  .slidenavbar h4 {
+    margin-top: 10px;
+    font-size: 20px;
+    margin-left: 50px;
+  }
+  .closebutton {
+  
+    margin-left: 260px;
+    position: absolute;
+    top: 40px;
+    margin-top: -30px;
+  }
+  .slidecontent{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    gap: 10px;
+  }
+  .slidecontent img{
+    margin-left: 45px;
+    width: 40px;
+  }
+  .jordansymbol{
+    display: flex;
+    margin-top: 50px;
+    padding-left: 50px;
+    gap: 15px;
+  }
+  .slidenavcontents p{
+    color: #0000007d;
+  }
+  .slidenavcontents{
+    width: 260px;
+    margin-left: 30px;
+    margin-top: 40px;
+  }
+  .blackp{
+    color: black;
+  }
+ .slidebuttons{
+  margin-top: 20px;
+ display: flex;
+ gap: 10px;
+ justify-content: center;
+ margin-bottom: 10px;
+ padding-left: 20%;
+ }
+ .slidebuttons button{
+  width: 80px;
+  height: 40px;
+  border-radius: 20px;
+  margin-left: 3%;
+ }
+ .slidebuttons .button1{
+  background-color: black;
+  color: white;
+  border: none;
+  font-weight: 400;
+ }
+ .slidebuttons .button2{
+  background-color: white;
+  color: black;
+  font-weight: 400;
+  border: 1px solid;
+ }
+ .slide-end{
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  margin-bottom: 200px;
+  gap: 5px;
+ }
+ .slide-end div{
+  display: flex;
+  margin-left: 50px;
+  gap: 30px;
+ }
+ .slidesubcontent {
+  height: 100vh; 
+  width: 0px;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto; 
+  z-index: 10;
+  transition: ease-in 0.1s;
+  position: fixed;
+  padding-top: 10px;
+  background-color: white;
+}
+
+.slidesubcontent.open {
+  width: 320px;
+}
+.subtop{
+  display: flex;
+  justify-content: space-between;
+}
+.subtopfirst{
+  margin-left: 25px;
+  margin-top: 15px;
+  display: flex;
+}
+.subtoplast{
+  display: flex;
+  margin-top: 8px;
+  margin-right: 15px;
+  background-color: #0000000d;
+  width: 35px;
+  height: 35px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+.subhead{
+  margin-top: 25px;
+  margin-left: 40px;
+}
+.subend ul{
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-left: 10px;
+  margin-top: 40px;
+}
+.subend ul li{
+  font-weight: 600;
+  font-size: medium;
+  color: #0000008d;
+}
+
+  @media (max-width:1200px) {
+    .searchbar{
+        display: none;
+    }
+    .searchicon{
+       background: none;
+    }
+  }
+  @media (max-width:960px) {
+    .firstnav{
+        display: none;
+    }
+    .secondcenter{
+        display: none;
+    }
+    .hamburgericon{
+        display: block;
+        height: 30px;
+        width: 30px;
+        margin-top:3px;
+    
+    }
+  }

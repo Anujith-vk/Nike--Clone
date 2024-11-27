@@ -1,0 +1,85 @@
+.Likedmain{
+    margin: 20px 10% 0px 10%;
+}
+.likedmainbody{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+.likedmainbody2{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-bottom: 30px;
+    height: 270px; 
+}
+.dispatching{
+    color: rgb(234, 234, 72);
+}
+.shipped{
+    color: orange;
+}
+.rejected{
+    color: red;
+}
+.delivered{
+    color: green;
+}
+.showim{
+    min-width: 145px;
+    max-width: 150px;
+    width: 100%;
+   min-height: 145px;
+}
+.showimg{
+    min-width: 145px;
+    max-width: 250px;
+    width: 100%;
+   min-height: 145px;  
+}
+.butdiv{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.likedesc{
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.likedesc p{
+    margin-top: -15px;
+}
+.toplike{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 10px;
+}
+.addcbut{
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    color: white;
+    background-color: black;
+    border: none;
+    font-size: medium;
+    font-weight: 400;
+}
+@media (max-width:767px) {
+    .likedmainbody{
+        flex-direction: column;
+        gap: 5px;
+    }
+    .likedmainbody2{
+      flex-direction: column;
+      
+      height: auto;
+      margin-bottom: 100px;
+    }
+}

@@ -1,0 +1,91 @@
+.registermain{
+    margin: 0px 3% 0px 3%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.formclass{
+    margin-top: -20px;
+     max-height: 80vh;
+     height: 100%;
+    max-width: 380px;
+    width: 100%;
+}
+.registermain1{
+    margin: 0px 3% 0px 3%;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+    margin-bottom: 50px;
+}
+.regtop{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.regtop p{
+    font-weight: 300;
+    font-size: medium;
+    color: #0000006d;
+    text-align: center;
+}
+.rcontents{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 20px;
+}
+.rinputfeild{
+    width: 100%;
+    border-radius: 5px;
+    padding: 2px;
+    border: 2px solid #0000004d;
+}
+.rinputfeilddate{
+    width: 100%;
+    border-radius: 5px;
+    padding: 2px;
+    border: 2px solid #0000004d;
+}
+.termcond{
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.termcond p{
+    text-align: center;
+   font-size: small;
+   font-weight: 200;
+   color: #0000006d;
+}
+.termcond a{
+    color: black;
+}
+.rbutton button{
+    width: 100%;
+    color: white;
+    background-color: black;
+    height: 40px;
+    font-weight: 600;
+}
+.rlog{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.rlog p{
+    font-size: medium;
+    font-weight: 200;
+    color: #0000006d;
+}
+.rlog p a{
+    color: black;
+}

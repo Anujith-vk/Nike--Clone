@@ -1,0 +1,317 @@
+.overmain {
+    height: auto;
+    margin: 0px 3% 0px 3%;
+    display: flex;
+    flex-direction: row;
+}
+
+.overleft {
+    width: 100%;
+    max-width: 930px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+}
+
+.overright {
+    height: 90vh;
+    max-width: 498px;
+    width: 100%;
+    overflow-y: auto;
+}
+
+.overright::-webkit-scrollbar {
+    display: none;
+}
+
+.allimage {
+    max-height: 450px;
+    height: auto;
+    margin-top: 120px;
+    max-width: 70px;
+    width: 100%;
+    margin-left: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.mainimage {
+    max-height: 550px;
+    height: auto;
+    margin-top: 45px;
+    max-width: 600px;
+    width: 100%;
+    margin-right: 50px;
+}
+
+.mini {
+    max-width: 70px;
+    width: 100%;
+    max-height: 80px;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.overtop {
+    max-width: 400px;
+    margin-left: 40px;
+    margin-top: 45px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.overtop p {
+    font-size: medium;
+    font-weight: 400;
+    margin-top: -10px;
+}
+
+.dialouge {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.dialouge p {
+    margin-top: -20px;
+    font-weight: 200;
+    color: #0000005d;
+}
+
+.size {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: auto;
+    max-width: 400px;
+    width: 100%;
+    margin-left: 40px;
+    margin-top: 50px;
+    padding: 10px;
+    gap: 10px;
+}
+
+.minisize {
+    border: 2px solid #0000005d;
+    width: 90px;
+    height: 60px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 15px;
+}
+.minisize.selected {
+    border-color:black; 
+}
+
+.overbutton {
+    max-width: 400px;
+    margin-left: 40px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.overbutton button {
+    height: 40px;
+    border-radius: 20px;
+}
+
+.addtobag {
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+.Favourite {
+    background-color: white;
+    border: 2px solid #0000008d;
+}
+
+.overdescription {
+    max-width: 400px;
+    width: 100%;
+    margin-left: 40px;
+    height: auto;
+    margin-top: 40px;
+    word-wrap: break-word;
+    padding: 5px;
+}
+
+.overdescription p {
+    font-weight: 400;
+}
+
+.overhighlight {
+    width: 100%;
+    height: auto;
+    word-wrap: break-word;
+}
+
+.overhighlight p {
+    font-weight: 400;
+}
+
+.high {
+    max-width: 400px;
+    width: 100%;
+    margin-left: 40px;
+    margin-top: 50px;
+}
+
+.imageinmain {
+    max-height: 550px;
+    height: auto;
+    max-width: 600px;
+    width: 100%;
+}
+
+.miniimage {
+    max-width: 70px;
+    width: 100%;
+    max-height: 80px;
+    height: 100%;
+    border-radius: 10%;
+}
+
+@media (max-width: 1439px) {
+    .overleft {
+        flex-direction: column;
+        gap: 10px;
+        margin-left: 0;
+    }
+
+    .allimage {
+        order: 2;
+        margin-top: 30px;
+        max-width: 70px;
+        flex-direction: row;
+        max-width: 600px;
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    .mainimage {
+        order: 1;
+    }
+
+    .miniimage {
+        max-width: 70px;
+        width: 100%;
+        max-height: 80px;
+        height: 100%;
+    }
+
+    .overright {
+        height: 90vh;
+        max-width: 800px;
+        width: 100%;
+        overflow-y: auto;
+
+    }
+
+    .size {
+        grid-template-columns: repeat(4, 1fr);
+        max-width: 350px;
+        width: 100%;
+    }
+    .overleft{
+        height: auto;
+    }
+}
+
+@media (max-width: 920px) {
+    .overmain {
+        flex-direction: column;
+    }
+    .overright {
+        width: 100%; 
+        height: auto; 
+        margin-left: 0; 
+        padding: 0 20px;
+    }
+
+    .allimage {
+        margin-left: 0;
+        margin-top: 20px;
+        flex-direction: row; 
+        max-width: 100%;
+    }
+
+    .mainimage {
+        margin-top: 15px;
+        margin-right: 0;
+        max-width: 100%; 
+    }
+
+    .overtop {
+        margin-left: 0;
+        margin-top: 30px; 
+        max-width: 100%;
+    }
+
+    .size {
+        margin-left: 0;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 8px; 
+        margin-top: 30px; 
+
+    }
+
+    .overbutton {
+        max-width: 100%; 
+        width: 100%;
+        margin-top: 20px;
+        margin-left: 0px;
+    }
+
+    .high{
+        margin-left: 0;
+        width: 100%; 
+        max-width: 100%;
+    }
+
+    .overhighlight {
+        width: 100%;
+        max-width: 100%;
+    }
+    .size{
+        margin-top: 20px;
+    }
+    .allimage{
+        margin-left: 24px;
+    }
+    .overdescription {
+        margin-left: 0;
+        width: 100%;
+        max-width: 100%;
+        margin-top: 20px; 
+    }
+    .mainimage{
+        margin-top: 0;
+    }
+    .imageinmain{
+        padding: 0px 3% 0px 3%;
+        max-width: 920px;
+        width: 100%;
+        max-height: 550px;
+       
+    }
+}
+@media (max-width:450px) {
+    .size {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .allimage{
+        margin-left: 0px;
+    }
+}
+@media (max-width:347px) {
+    .size {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

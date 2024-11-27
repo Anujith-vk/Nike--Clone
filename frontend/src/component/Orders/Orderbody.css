@@ -1,0 +1,45 @@
+.ordermainbody{
+    display: flex;
+    margin-bottom: 50px;
+    height: auto;
+    padding-bottom: 20px;
+
+}
+.toporder{
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 470px;
+}
+.bin{
+    width:25px;
+    height: 25px;
+}
+.addr{
+    padding-left: 10px;
+    width: 100%;
+    height: 40vh;
+}
+.addr p{
+    margin-top: -7px;
+}
+.status-shipped {
+    color: rgb(255, 166, 0); 
+  }
+.status-dispatch{
+    color: rgb(231, 231, 55);
+} 
+.cancelled{
+    color: red;
+} 
+
+@media (max-width:767px) {
+    .addr{
+     margin-top: 140px;
+    }
+    .ordermainbody{
+      flex-direction: column;
+      margin-bottom: -40px;
+    }
+   
+}
