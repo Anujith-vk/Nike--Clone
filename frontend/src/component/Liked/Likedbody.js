@@ -23,34 +23,24 @@ const Likedbody = () => {
   }, [])
   const Handlecart=async (item_id,id,selectedSize)=>{
   try {
-    if(!token)
-    {
-      handleerror("Please Login First")
-    }
-    else{
+       const token=localStorage.getItem('UserToken')
       const respose=await axios.post(`https://nike-clone-3etr.onrender.com/product/addtocart/${id}`,{size:selectedSize},{headers :{Authorization :`Bearer ${token}`}})
       if(respose){
         handlesuccess( respose.data.message)
         Handledelete(item_id)
       }
-    }
   } catch (error) {
     handleerror(error.response.data.message)
   }
   }
   const  Handledelete=async (id)=>{
-  try {
-    if(!token)
-      {
-        handleerror("Please Login First")
-      }
-      else{
+  try { 
+        const token=localStorage.getItem('UserToken')
         const response=await axios.delete(`https://nike-clone-3etr.onrender.com/product/favourite/delete/${id}`,{headers :{Authorization :`Bearer ${token}`}})
         if(response)
         {
           setproducts((products)=>products.filter((product)=>product._id !== id))
         }
-      }
   } catch (error) {
     handleerror(error.response.data.message)
   }
