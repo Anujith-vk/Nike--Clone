@@ -7,7 +7,7 @@ const Orderstatus = () => {
   const fetchorder=async ()=>{
     try {
         const token=localStorage.getItem('UserToken')
-        const response=await axios.get('http://localhost:2000/user/orders',{headers :{Authorization :`Bearer ${token}`}})
+        const response=await axios.get('https://nike-clone-3etr.onrender.com/user/orders',{headers :{Authorization :`Bearer ${token}`}})
         if(response){
           const filtered = response.data.products.map(order => {const filteredProducts = order.products.filter(product => product.status !== 'Cancelled' )
             return { ...order, products: filteredProducts };
@@ -24,7 +24,7 @@ const Orderstatus = () => {
         console.log("Sending data:", { id, product, status });
         const token = localStorage.getItem('UserToken');
         const response = await axios.put(
-            `http://localhost:2000/Admin/Orders/view/${id}/product/${product}`,
+            `https://nike-clone-3etr.onrender.com/Admin/Orders/view/${id}/product/${product}`,
             { status },
             { headers: { Authorization: `Bearer ${token}` } }
         );
