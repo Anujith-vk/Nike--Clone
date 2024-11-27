@@ -64,7 +64,7 @@ useEffect(() => {
         orders.flatMap((item, index) =>
           item.products.map((product, prodIndex) => (
             <div className="ordermainbody" key={`${index}-${prodIndex}`}>
-              <div className="likedesc">
+              <div className="likedesc2">
                 <img
                   src={product.product.image[0]}  
                   alt={product.product.title}
@@ -84,7 +84,7 @@ useEffect(() => {
                   <button className='addcbut' onClick={()=>Handlestatus(item._id,product._id,"Rejected")}>Reject</button>
                 </div>
               </div>
-              <div className="addr">
+              <div className="addr2">
                 <p>Name: {item.name.firstname} {item.name.lastname}</p>
                 <p>Phone Number: {item.phone}</p>
                 <p>Email: {item.email}</p>
