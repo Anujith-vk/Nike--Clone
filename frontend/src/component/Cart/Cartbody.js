@@ -21,7 +21,6 @@ const Cartbody = () => {
                 handleerror("No cart items found");
             }
         } catch (error) {
-            handleerror(error.response.data.message); 
         }
     };
 
