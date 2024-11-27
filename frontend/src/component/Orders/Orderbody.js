@@ -11,7 +11,7 @@ const Orderbody = () => {
   const fetchorders = async () => {
     try {
       const token = localStorage.getItem('AdminToken')
-      const response = await axios.get('http://localhost:2000/orders/list', {
+      const response = await axios.get('https://nike-clone-3etr.onrender.com/orders/list', {
         headers: { Authorization: `Bearer ${token}` }
       })
       if (response.data.details) {
@@ -29,7 +29,7 @@ const Orderbody = () => {
     try {
         const token = localStorage.getItem('AdminToken');
         const response = await axios.put(
-            `http://localhost:2000/Admin/Orders/view/${id}/product/${product}`,
+            `https://nike-clone-3etr.onrender.com/Admin/Orders/view/${id}/product/${product}`,
             { status },
             { headers: { Authorization: `Bearer ${token}` } }
         );
@@ -45,7 +45,7 @@ const Orderbody = () => {
 const Handledelete=async (id,productid)=>{
 try {
   const token = localStorage.getItem('AdminToken');
-  const response=await axios.delete(`http://localhost:2000/order/delete/${id}/product/${productid}`,{headers : {Authorization :`Bearer ${token}`}})
+  const response=await axios.delete(`https://nike-clone-3etr.onrender.com/order/delete/${id}/product/${productid}`,{headers : {Authorization :`Bearer ${token}`}})
   if(response.status===200)
   {
     fetchorders()
