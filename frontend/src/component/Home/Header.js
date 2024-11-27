@@ -53,7 +53,7 @@ const Header = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get("http://localhost:2000/products/display");
+        const response = await axios.get("https://nike-clone-3etr.onrender.com/products/display");
         if (response.data && response.data.products) {
           setfetcheddata(response.data.products);
           setfiltereddata(response.data.products);
