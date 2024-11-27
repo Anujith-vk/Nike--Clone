@@ -1,6 +1,9 @@
 .Likedmain{
     margin: 20px 10% 0px 10%;
 }
+.Likedmain2{
+    margin: 20px 10% 0px 10%;
+}
 .likedmainbody{
     width: 100%;
     display: flex;
@@ -14,7 +17,16 @@
     flex-direction: row;
     gap: 20px;
     margin-bottom: 30px;
-    height: 270px; 
+    height: auto; 
+}
+.likedesc2{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.likedesc2 p{
+    margin-top: -15px;
 }
 .dispatching{
     color: rgb(234, 234, 72);
@@ -79,6 +91,5 @@
     .likedmainbody2{
       flex-direction: column;
       height: 480px;
-      margin-bottom: 100px;
     }
 }
