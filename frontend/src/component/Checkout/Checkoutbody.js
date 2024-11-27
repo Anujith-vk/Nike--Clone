@@ -20,7 +20,7 @@ const navigate=useNavigate()
   const fetchProducts = async () => {
     const token = localStorage.getItem('UserToken');
     try {
-      const response = await axios.get('http://localhost:2000/product/cart/items', {
+      const response = await axios.get('https://nike-clone-3etr.onrender.com/product/cart/items', {
         headers: { Authorization: `Bearer ${token}` }
       });
       if (response && response.data.details) {
@@ -67,7 +67,7 @@ const handleSubmit = async (e) => {
   };
   try {
       const token = localStorage.getItem('UserToken');
-      const response = await axios.post('http://localhost:2000/product/order', orderData, {
+      const response = await axios.post('https://nike-clone-3etr.onrender.com/product/order', orderData, {
           headers: { Authorization: `Bearer ${token}` }
       });
       if (response) {
