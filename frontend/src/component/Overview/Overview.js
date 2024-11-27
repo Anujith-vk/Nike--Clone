@@ -12,7 +12,7 @@ const Overview = ({ id }) => {
     const [selectedSize, setSelectedSize] = useState(null);
     useEffect(() => {
         const fetchProduct = async () => {
-            const response = await axios.get(`http://localhost:2000/product/overview/${id}`);
+            const response = await axios.get(`https://nike-clone-3etr.onrender.com/product/overview/${id}`);
             if (response.data && response.data.product) {
                 setShow(response.data.product);
                 setMainImage(response.data.product.image && response.data.product.image[0]);
@@ -36,7 +36,7 @@ const Overview = ({ id }) => {
         }
         try {
             const token=localStorage.getItem('UserToken')
-            const response = await axios.post(`http://localhost:2000/product/addtocart/${id}`, { size: selectedSize }, { headers: { Authorization: `Bearer ${token}`, }, });
+            const response = await axios.post(`https://nike-clone-3etr.onrender.com/product/addtocart/${id}`, { size: selectedSize }, { headers: { Authorization: `Bearer ${token}`, }, });
             if (response) {
                 handlesuccess(response.data.message)
                 setTimeout(() => {
@@ -54,7 +54,7 @@ const Overview = ({ id }) => {
         }
         try {
             const token=localStorage.getItem('UserToken')
-            const response = await axios.post(`http://localhost:2000/product/favorite/${id}`, { size: selectedSize }, { headers: { Authorization: `Bearer ${token}`, }, });
+            const response = await axios.post(`https://nike-clone-3etr.onrender.com/product/favorite/${id}`, { size: selectedSize }, { headers: { Authorization: `Bearer ${token}`, }, });
             if (response) {
                 handlesuccess(response.data.message)
                 setTimeout(() => {
