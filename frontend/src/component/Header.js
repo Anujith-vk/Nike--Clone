@@ -110,7 +110,7 @@ const Handlefirst = (category) => {
 const [products,setproducts]=useState([])
 const fetchproducts=async ()=>{
   try {
-    const response=await axios.get('http://localhost:2000/products/display')
+    const response=await axios.get('https://nike-clone-3etr.onrender.com/products/display')
     if(response && response.data.products)
     {
       const sortedProducts = response.data.products.reverse()
